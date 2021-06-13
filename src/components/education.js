@@ -38,7 +38,7 @@ export default function Education() {
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <img className={classes.image1} style={{height:'40%',width:'30%'}} alt="i am programmer" src="images/iiit.jpeg" />
+                        <img className={classes.image1} style={{height:'40%',width:'30%'}} alt="i am programmer" src={process.env.PUBLIC_URL +"/images/iiit.jpeg" }/>
                     </Grid>
                     <Grid item xs={12} sm={6} >
                         <Paper >
@@ -51,7 +51,7 @@ export default function Education() {
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <img className={classes.image1} style={{height:'40%',width:'20%'}} alt="i am programmer" src="images/jnv.jpeg" />
+                        <img className={classes.image1} style={{height:'40%',width:'20%'}} alt="i am programmer" src={process.env.PUBLIC_URL +"/images/jnv.jpeg"} />
                     </Grid>
                     <Grid item xs={12} sm={6} >
                         <Paper >
@@ -64,7 +64,7 @@ export default function Education() {
                         </Paper>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <img className={classes.image1} style={{height:'40%',width:'20%'}} alt="i am programmer" src="images/jnv.jpeg" />
+                        <img className={classes.image1} style={{height:'40%',width:'20%'}} alt="i am programmer" src={process.env.PUBLIC_URL +"/images/jnv.jpeg"} />
                     </Grid>
                     
                     

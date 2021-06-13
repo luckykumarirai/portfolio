@@ -1,6 +1,6 @@
  
 import React from 'react';
-import { makeStyles, Typography,Avtar, Button, Grid, IconButton, TextField, Card, Avatar } from '@material-ui/core';
+import { makeStyles, Typography, Button, Grid, IconButton, Card, Avatar } from '@material-ui/core';
 import Facebook from '@material-ui/icons/Facebook';
 import Instagram from '@material-ui/icons/Instagram';
 import GitHub from '@material-ui/icons/GitHub';
@@ -15,7 +15,7 @@ export default function Contact() {
     <div>
       <Grid container spacing={3} className={classes.containergrid} alignItems="center" justify="center">
 		    <Grid item xs={12} sm={6}>
-		      <Avatar src="images/lucky.jpg" alt="address" style={{width:"50%", height:"50%",marginLeft:"20%"}} />
+		      <Avatar src={process.env.PUBLIC_URL +"/images/lucky.jpg"} alt="address" style={{width:"50%", height:"50%",marginLeft:"20%"}} />
 		    </Grid>
 		    <Grid item xs={12} sm={6}>
 					<Card className={classes.formcard}>
@@ -38,7 +38,7 @@ export default function Contact() {
 				    	<u>Home Address</u>
 						</Typography>
 						<Typography variant="h6" className={classes.introduction} color="textSecondary">
-				    	<i>Buxar,Bihar India, Pin Code: 332406</i>
+				    	<i>Buxar,Bihar India, Pin Code: 802128</i>
 						</Typography>
 						<br/>
 						<Button variant="contained" color="primary" size="large" startIcon={<VisibilityIcon/>}>

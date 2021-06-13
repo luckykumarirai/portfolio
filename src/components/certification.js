@@ -14,7 +14,7 @@ export default function Certification() {
 			<Grid container spacing={3} className={classes.containergrid}>
 	  		<Grid item xs={12} sm={4} >
 	  			<Card className={classes.card2}>
-	                <img style={{marginLeft:"25%"}} src="images/internshala.jpg" alt="internshala" width="200" height="150" />
+	                <img style={{marginLeft:"25%"}} src={process.env.PUBLIC_URL +"/images/internshala.jpg"} alt="internshala" width="200" height="150" />
 					<Typography variant="h6" align="center">Machine Learning Training</Typography>
 					<Typography variant="h6" color="textSecondary" align="center">Internshala</Typography>
                     <Button style={{marginLeft:"30%"}} variant="contained" color="Primary" size="medium" startIcon={<VisibilityIcon/>}>
@@ -25,7 +25,7 @@ export default function Certification() {
 	      <Grid item xs={12} sm={4}>
 	  			<Card className={classes.card2} style={{justifyContent:"center"}}>
                     <div style={{marginLeft:"25%"}}>
-	                <img src="images/iitbombay.png"alt="iitbombay" width="200" height="150" />
+	                <img src={process.env.PUBLIC_URL +"/images/iitbombay.png"} alt="iitbombay" width="200" height="150" />
                     </div>
 					<Typography variant="h6" align="center">Spoken Tutorial on Python</Typography>
 					<Typography variant="h6" color="textSecondary" align="center">IIT Bombay</Typography>
@@ -36,7 +36,7 @@ export default function Certification() {
 	      </Grid>
 	      <Grid item xs={12} sm={4}>
 	  			<Card className={classes.card2}>
-	                <img src="images/hackerrank.png" alt="hackerrank" width="350" height="150" />
+	                <img src={process.env.PUBLIC_URL +"/images/hackerrank.png"} alt="hackerrank" width="350" height="150" />
 					<Typography variant="h6" align="center">C/C++ Hackerrank Certificate</Typography>
 					<Typography variant="h6" color="textSecondary" align="center">Hackerrank</Typography>
 		    	    <Button style={{marginLeft:"30%"}} variant="contained" color="primary" size="medium" startIcon={<VisibilityIcon/>}>
@@ -49,7 +49,7 @@ export default function Certification() {
 	    <Grid container spacing={3} className={classes.containergrid}>
 	  		<Grid item xs={12} sm={4}>
 	  			<Card className={classes.card2}>
-	                <img style={{marginLeft:"20%"}}src="images/iitbombay.png" alt="iitbombay" width="150" height="150" />
+	                <img style={{marginLeft:"20%"}}src={process.env.PUBLIC_URL +"/images/iitbombay.png"} alt="iitbombay" width="150" height="150" />
 					<Typography variant="h6" align="center">Spoken Tutorial on Latex</Typography>
 					<Typography variant="h6" color="textSecondary" align="center">IIT Bombay</Typography>
 		    	    <Button style={{marginLeft:"30%"}} variant="contained" color="primary" size="medium" startIcon={<VisibilityIcon/>}>
@@ -59,7 +59,7 @@ export default function Certification() {
 	        </Grid>
             <Grid item xs={12} sm={4}>
                     <Card className={classes.card2}>
-                        <img src="images/nptel.jpg" alt="nptel" width="250" height="150" />
+                        <img src={process.env.PUBLIC_URL +"/images/nptel.jpg"} alt="nptel" width="250" height="150" />
                         <Typography variant="h6" align="center">Introduction to Operating System</Typography>
                         <Typography variant="h6" color="textSecondary" align="center">NPTEL IIT Madras</Typography>
                         <Button style={{marginLeft:"30%"}} variant="contained" color="primary" size="medium" startIcon={<VisibilityIcon/>}>
@@ -69,7 +69,7 @@ export default function Certification() {
             </Grid>
             <Grid item xs={12} sm={4}>
                     <Card className={classes.card2}>
-                        <img src="images/linkedin.png" alt="linkedin" width="300" height="150" />
+                        <img src={process.env.PUBLIC_URL +"/images/linkedin.png"} alt="linkedin" width="300" height="150" />
                         <Typography variant="h6" align="center">Software Engineering Training</Typography>
                         <Typography variant="h6" color="textSecondary" align="center">Linkedin</Typography>
                         <Button style={{marginLeft:"30%"}} variant="contained" color="primary" size="medium" startIcon={<VisibilityIcon/>}>

@@ -1,28 +1,9 @@
 import React from 'react';
-import { makeStyles, Card,Paper, CardContent, CardActions, Collapse, Button, Typography, List, ListItem, ListItemText, Divider, Grid } from '@material-ui/core';
-import clsx from 'clsx';
-import GitHub from '@material-ui/icons/GitHub';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import LanguageIcon from '@material-ui/icons/Language';
+import { makeStyles,Paper,Typography, Grid } from '@material-ui/core';
+
 
 export default function Project() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-  const [expanded2, setExpanded2] = React.useState(false);
-  const [expanded3, setExpanded3] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-  
-  const handleExpandClick2 = () => {
-    setExpanded2(!expanded2);
-  };
-
-	const handleExpandClick3 = () => {
-    setExpanded3(!expanded3);
-  };
-  
   return (
   	<>
   	<Grid container spacing={3} className={classes.containergrid} >

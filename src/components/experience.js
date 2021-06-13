@@ -1,7 +1,5 @@
 import React from 'react';
-import { makeStyles, Card,Link, CardContent, CardActions, Collapse, Button, Typography, List, ListItem, ListItemText, Divider, Grid } from '@material-ui/core';
-import clsx from 'clsx';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { makeStyles, Card,Link, CardContent, CardActions, Button, Typography, Divider, Grid } from '@material-ui/core';
 import LanguageIcon from '@material-ui/icons/Language';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 
@@ -44,11 +42,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function Experience() {
   const classes = useStyles();
-	const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  }
  
   return (
     <>
@@ -78,19 +71,19 @@ export default function Experience() {
 						<Divider/>
 						<CardContent>
 							<Button variant="outlined" color="secondary" className={classes.skill}>
-								<img src="images/html5.png" alt="html" width="23" height="20" />&nbsp;HTML
+								<img src={process.env.PUBLIC_URL +"/images/html5.png"} alt="html" width="23" height="20" />&nbsp;HTML
 							</Button>
 							<Button variant="outlined" color="secondary" className={classes.skill}>
-								<img src="images/js.png" alt="javascript" width="23" height="20" />&nbsp;JavaScript
+								<img src={process.env.PUBLIC_URL +"/images/js.png"} alt="javascript" width="23" height="20" />&nbsp;JavaScript
 							</Button>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/bootstrap1.png" alt="bootstrap1" width="20" height="20" />&nbsp;Bootstrap
+								<img src={process.env.PUBLIC_URL +"/images/bootstrap1.png"} alt="bootstrap1" width="20" height="20" />&nbsp;Bootstrap
 							</Button>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/php.png" alt="php" width="25" height="20" />&nbsp;PHP
+								<img src={process.env.PUBLIC_URL +"/images/php.png"} alt="php" width="25" height="20" />&nbsp;PHP
 							</Button>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/mysql.png" alt="mysql" width="20" height="20" />&nbsp;MySQL
+								<img src={process.env.PUBLIC_URL +"/images/mysql.png"} alt="mysql" width="20" height="20" />&nbsp;MySQL
 							</Button>
 						</CardContent>
 						<Divider/>
@@ -111,7 +104,7 @@ export default function Experience() {
         </Grid>
 
         <Grid item xs={12} sm={6}>
-        <Card style={{marginTop:"2%",backgroundColor:"#e1bee7",marginTop:"20%"}}>
+        <Card style={{backgroundColor:"#e1bee7",marginTop:"20%"}}>
 						<Typography variant="h5" className={classes.cardheader}>
 							Backend Development Internship
 						</Typography>
@@ -134,13 +127,13 @@ export default function Experience() {
 						<Divider/>
 						<CardContent>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/react.png" alt="bootstrap1" width="20" height="20" />&nbsp;React
+								<img src={process.env.PUBLIC_URL +"/images/react.png"} alt="bootstrap1" width="20" height="20" />&nbsp;React
 							</Button>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/node.png" alt="php" width="25" height="20" />&nbsp;Node.js
+								<img src={process.env.PUBLIC_URL +"/images/node.png"} alt="php" width="25" height="20" />&nbsp;Node.js
 							</Button>
 							<Button variant="outlined" color="primary" className={classes.skill}>
-								<img src="images/mongodb.png" alt="mysql" width="20" height="20" />&nbsp;MongoDb
+								<img src={process.env.PUBLIC_URL +"/images/mongodb.png"} alt="mysql" width="20" height="20" />&nbsp;MongoDb
 							</Button>
 						</CardContent>
 						<Divider/>
