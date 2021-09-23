@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
     <>
     <Grid container className={classes.root} direction="row" justify="flex-start">
         <Grid item xs={12} sm={6}>
-          <img className={classes.image1} style={{height:'80%',width:'80%'}} alt="i am programmer" src={process.env.PUBLIC_URL +"/images/2.gif"} />
+          <img className={classes.image1} style={{height:'80%',width:'80%'}} alt="i am programmer" src="https://i.pinimg.com/736x/f5/b0/45/f5b045627b6c125e500fc02f42d79763.jpg" />
         </Grid>
         <Grid item xs={12} sm={6} className={classes.intro}>
             <Typography variant="h3" style={{fontWeight:"bolder"}}>👋Hi all,I'm Lucky👧</Typography>
